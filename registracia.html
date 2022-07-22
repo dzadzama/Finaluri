@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    
+    <link rel="stylesheet" href="style/stylereg.css">
+    <title>Pastia</title>
+</head>
+<body class="btstrp">
+    <header>
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="img/pastia.png" alt="logo" style="width:60px;">
+          BC PASTIA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="main.html">მთავარი</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="momentebi.html">SHOWTIME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">მაღაზია</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="registracia.html">რეგისტრაცია</a>
+            </li>
+           
+        </div>  
+      </nav>
+</header>
+<main>
+  <form class="register" autocomplete="off" method="post" action="actionreg.html">
+    <input type="text" name="firstname" id="firstname" placeholder="სახელი">
+    <input type="text" name="lastname" id="lastname" placeholder="გვარი">
+    <input type="email" name="mail" id="mail" placeholder="ელ.ფოსტა" autocomplete="on" required>
+    <input type="number" name="age" id="age" placeholder="ასაკი" >
+    <input type="password" name="password1" id="password1" placeholder="პაროლი">
+    <input type="password" name="password2" id="password2" placeholder="გაიმეორეთ პაროლი">
+    
+    <p id="pasuxi"></p>
+    
+    <input type="checkbox" name="rules" id="rules">
+    <label for="rules">ვეთანხმები <a href="pdf/rules.pdf" target="_blank">წესებსა და პირობებს</a> </label>
+    
+    <input onclick="shedareba();" type="submit" name="gagzavna" id="gagzavna" value="რეგისტრაცია">
+</form>
+
+
+<button class="open-button" onclick="openForm()">Chat With Us</button>
+
+<div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+   
+   
+
+    <label for="msg"> <b>Chat Message</b>  <img src="img/pastia.png" alt="logo" style="width:60px;"></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+
+
+
+</main>
+<footer>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/registr.js"></script>
+  </body>
+  </html>
